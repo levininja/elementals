@@ -42,7 +42,7 @@ namespace ElementalBuilder
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=BuildPower}/{id?}"
+                    template: "{controller=Home}/{action=Index}/{id?}"
                 );
             });
         }
