@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "create-react-app": "^2.0.3"
+    "create-react-app": "^2.0.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "node-sass": "^4.9.3"
   },
   "devDependencies": {},
   "scripts": {

@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// const domContainer = document.querySelector('#like_button_container');
-// ReactDOM.render(e(LikeButton), domContainer);
+//eslint rules exceptions
+/* eslint anchor-is-valid: "off", */
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

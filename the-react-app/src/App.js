@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
-
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      TabIndex: 1,
+      //1 = character creation, 2 = home, 3 = power creation
+      TabIndex: 2,
     };
     this.setTabIndex = this.setTabIndex.bind(this);
   }
@@ -16,7 +17,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className="container App">
         <div className="row">
             <Tabs tabIndex={this.state.TabIndex} setTabIndex={this.setTabIndex} />
         </div>
@@ -33,7 +34,7 @@ const Tabs = (props) => {
   return(
     <div className="col">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Elementals</a>
+        <span className="navbar-brand">Elementals</span>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -81,7 +82,7 @@ const Content = (props) => {
       break;
   }
   return(
-    <div>
+    <div id="content" className="col">
       {innerContent}
     </div>
   );
